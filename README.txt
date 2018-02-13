@@ -5,7 +5,6 @@ Commands:
 2) rosrun rviz rviz (visualize)
 
 UI ops:
-Add
 1) press 'add topic'
 2)
 /camera/image_raw
@@ -19,13 +18,12 @@ rosbag play -l xxx.bag
 
 
 Some other commands:
-1) source devel/steup.sh
-2) check if the sensor is responding:
+source devel/steup.sh
+check if the sensor is responding:
 rostopic hz /camera/image_raw
 rostopic hz /velodyne_points
 rostopic llist
 rosbag info
-
 
 
 Issues: 
@@ -82,7 +80,6 @@ Issue 2: can only see topic name after play
 1) In autoware, press 'project' to see the lidar points on the camera image
 2) For lidar to camera calibration, you can check how the lidar point projection aligns well to camera images.
 Especially, you can check regions with discontinuities such as adjoining walls.
-
   
 -----------------------------------------------------------------
 
